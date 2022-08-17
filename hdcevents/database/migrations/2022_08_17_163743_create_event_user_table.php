@@ -28,5 +28,8 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('event_user');
+        Schema::dropIfExists('event_id');
+        Schema::dropIfExists('user_id');
+
     }
 };
